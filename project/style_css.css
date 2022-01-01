@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	position: 0;
+	border-radius: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+body{
+	background-image: url(images/wallpaper.jpg);
+}
+
+header{
+	background-color: black;
+	opacity: 0.9;
+	padding: 0px;
+	color: white;
+	position: sticky;
+  width: 100%;
+}
+
+footer{
+	background-color: black;
+	opacity: 0.9;
+	padding: 15px;
+	color: white;
+}
+
+#img-logo{
+	padding-right: 50%; 
+}
+.button-nav{
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  border-radius: 10px;
+
+}
+.button-nav:hover{
+  background-color: white;
+  color: black;
+  transition: all 5s;
+  border-radius: 100px 100px;
+
+}
+.button_a{
+	 text-decoration: none;
+	 color: white;
+}
+
+.item1 { grid-area: img; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: left; }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'img img img img img img'
+    'menu menu menu menu menu menu'
+    'left left main main right right';
+  grid-gap: 10px;
+   padding: 10px;
+}
+
+#img2{
+    width: 80% ;
+    height: 450px;
+}
+.item2{
+	background-color: black;
+	color: white;
+	padding: 10px 0;
+  width: 100%;
+}
+#a1{
+	color: white;
+	padding: 15px 30px;
+	text-decoration: none;
+	font-size: 20px;
+}
+#a1:hover{
+	background-color: #666666;
+	border-radius: 10px 100px;
+	transition: all 2s;
+}
+.item3 , .item4 , .item5{
+
+     background-color: whitesmoke;	
+}
+.img-card{
+	width: 300px;
+	height: 200px;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.button-card {
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.button-card:hover {
+  text-decoration: none;
+  background-color: gray;
+  color: black;
+  transition: all 2s;
+  border-radius: 10px 100px; 
+}
+@media (max-width: 600px) {
+   .grid-container {
+  display: grid;
+  grid-template-areas:
+    'img img img img img img'
+    ' . menu menu menu . . '
+    ' . . left left . .'
+    ' . . main main . . '
+    ' . . right right . . ';
+  grid-gap: 10px;
+   padding: 10px;
+   }
+   #img2{
+    width: 80% ;
+    height: 200px;
+   }
+    header { width: 100%; }
+    footer{ width: 100%; }
+    .item2{width: 100%;}
+    .item3 , .item4 , .item5{
+      padding: 10px;
+    }
+
+  }
